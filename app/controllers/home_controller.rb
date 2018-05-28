@@ -11,7 +11,9 @@ class HomeController < ApplicationController
   def undefined
   end
 
-  def show
-  
+  def show 
+  end
+
+  def all_products
   end
 end
