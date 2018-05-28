@@ -120,7 +120,7 @@ return EvEmitter;
  * MIT License
  */
 
-( function( window, factory ) { // 'use strict';;
+( function( window, factory ) { // 'use strict';
   // universal module definition
 
   /*global define: false, module: false, require: false */

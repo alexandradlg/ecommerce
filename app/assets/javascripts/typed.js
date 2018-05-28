@@ -63,7 +63,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// 'use strict';;
+	// 'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -547,7 +547,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// 'use strict';;
+	// 'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -779,7 +779,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @public
 	 */
 	
-	// 'use strict';;
+	// 'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -943,7 +943,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Parse HTML tags & HTML Characters
 	 */
 	
-	// 'use strict';;
+	// 'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
 	  value: true

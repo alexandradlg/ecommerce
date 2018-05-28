@@ -360,7 +360,7 @@ module.exports = E;
         global.clipboardAction = mod.exports;
     }
 })(this, function (module, _select) {
-    // 'use strict';;
+    // 'use strict';
 
     var _select2 = _interopRequireDefault(_select);
 
@@ -591,7 +591,7 @@ module.exports = E;
         global.clipboard = mod.exports;
     }
 })(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
-    // 'use strict';;
+    // 'use strict';
 
     var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
 

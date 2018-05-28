@@ -4661,7 +4661,7 @@ if (typeof(module) !== 'undefined')
 }
 else if (typeof define === 'function' && define.amd) {
     define([], function () {
-        // 'use strict';;
+        // 'use strict';
         return window.Swiper;
     });
 }

@@ -28,7 +28,7 @@
 		root.Swiper = factory(root.jQuery);
 	}
 }(this, function ($) {
-	// 'use strict';;
+	// 'use strict';
 
     /*===========================
     Swiper
