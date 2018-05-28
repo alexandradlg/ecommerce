@@ -10,4 +10,8 @@ class HomeController < ApplicationController
 
   def undefined
   end
+
+  def show
+  
+  end
 end
