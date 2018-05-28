@@ -19,6 +19,7 @@ gem 'bcrypt', '3.1.11'
 gem 'jquery'
 gem 'jquery-rails'
 gem 'frontend-generators'
+gem "font-awesome-rails"
 gem 'dotenv'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'

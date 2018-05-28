@@ -5,7 +5,7 @@
     <div class="st-profile">
         <div class="st-profile-user-wrapper">
             <div class="profile-user-image">
-                <img src="../../assets/images/prv/people/person-1.jpg" class="img-circle" />
+                    <img src="<%= image_path('images/prv/people/person-1.jpg') %>" class="img-circle" />
             </div>
             <div class="profile-user-info">
                 <span class="profile-user-name">Bertram Ozzie</span>
@@ -108,7 +108,7 @@
         <div class="container navbar-container">
             <!-- Brand/Logo -->
                         <a class="navbar-brand" href="../../index.html">
-                <img src="../../assets/images/logo/logo-2-b.png" class="" alt="Boomerang">
+                <img src="<%= image_path('images/logo/logo-2-b.png') %>" class="" alt="Boomerang">
                             </a>
             
             <div class="d-inline-block">
@@ -523,7 +523,7 @@
         <div class="d-flex align-items-center">
             <div class="dc-image">
                 <a href="#">
-                    <img src="../../assets/images/prv/shop/accessories/img-2a.png" class="img-fluid" alt="">
+                    <img src="<%= image_path('images/prv/shop/accessories/img-2a.png') %>" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="dc-content">
@@ -548,7 +548,7 @@
         <div class="d-flex align-items-center">
             <div class="dc-image">
                 <a href="#">
-                    <img src="../../assets/images/prv/shop/accessories/img-3a.png" class="img-fluid" alt="">
+                    <img src="<%= image_path('images/prv/shop/accessories/img-3a.png') %>" class="img-fluid" alt="">
                 </a>
             </div>
             <div class="dc-content">
@@ -657,7 +657,7 @@
 					data-paddingleft="[0,0,0,0]"
 					style="z-index: 9;text-transform:left;border-width:0px;">
 
-					<img src="../../assets/images/slider/elements/model-f-3.png" alt="" data-ww="['650px','450px','450px','450px']" data-hh="['none','none','none','none']" data-no-retina>
+					<img src="<%= image_path('images/slider/elements/model-f-3.png') %>" alt="" data-ww="['650px','450px','450px','450px']" data-hh="['none','none','none','none']" data-no-retina>
 				</div>
 
 				<div class="tp-caption subtitle--style-1 tp-resizeme" id="slide-1-layer-1"
@@ -774,7 +774,8 @@
                                         <div class="card bg-minimalist">
                                             <div class="card-image">
                                                 <a href="#">
-                                                    <img src="../../assets/images/prv/shop/accessories/img-promo-1.png">
+                                                    <img src="<%= image_path('images/prv/shop/accessories/img-promo-1.png') %>">
+
                                                 </a>
                                             </div>
                                             <div class="card-body--overlay d-flex align-items-start">
@@ -795,7 +796,7 @@
                                     <div class="masonry-item col-md-6">
                                         <div class="card bg-minimalist">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/accessories/img-promo-3.png">
+                                                <img src="<%= image_path('images/prv/shop/accessories/img-promo-3.png') %>">
                                             </div>
                                             <div class="card-body--overlay d-flex align-items-start">
                                                 <div class="col">
@@ -816,7 +817,7 @@
                                         <div class="card bg-minimalist">
                                             <div class="card-image">
                                                 <a href="#">
-                                                    <img src="../../assets/images/prv/shop/accessories/img-promo-2.png">
+                                                    <img src="<%= image_path('images/prv/shop/accessories/img-promo-2.png') %>">
                                                 </a>
                                             </div>
                                             <div class="card-body--overlay d-flex align-items-start">
@@ -837,7 +838,7 @@
                                     <div class="masonry-item col-md-6">
                                         <div class="card bg-minimalist">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/accessories/img-promo-4.png">
+                                                <img src="<%= image_path('images/prv/shop/accessories/img-promo-4.png') %>">
                                             </div>
                                             <div class="card-body--overlay d-flex align-items-start">
                                                 <div class="col">
@@ -874,7 +875,7 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-1a.png">
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-1a.png') %>">
                                                     </a>
                                                 </div>
 
@@ -910,7 +911,7 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-2a.png">
+                                                        <img src="<%= image_path('images/prv/shop/accessories/img-2a.png') %>">                                                        
                                                     </a>
                                                 </div>
 
@@ -946,7 +947,7 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-3a.png">
+                                                        <img src="<%= image_path('images/prv/shop/accessories/img-3a.png') %>">
                                                     </a>
                                                 </div>
 
@@ -982,8 +983,8 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-4a.png">
-                                                    </a>
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-4a.png') %>">
+                                                        </a>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
@@ -1020,8 +1021,8 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-5a.png">
-                                                    </a>
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-5a.png') %>">
+                                                        </a>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -1056,8 +1057,8 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-6a.png">
-                                                    </a>
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-6a.png') %>">
+                                                        </a>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -1092,8 +1093,8 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                    </a>
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-7a.png') %>">
+                                                        </a>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -1128,7 +1129,7 @@
                                             <div class="product-image">
                                                 <div class="view view-first">
                                                     <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-8a.png">
+                                                            <img src="<%= image_path('images/prv/shop/accessories/img-8a.png') %>">
                                                     </a>
                                                 </div>
 
@@ -1189,16 +1190,16 @@
                                         <h3 class="heading heading-6 strong-500">Secure payment</h3>
                                         <ul class="inline-links mt-2">
                                             <li>
-                                                <img src="../../assets/images/icons/cards/visa.png" width="30" class="img-grayscale">
+                                                <img src="<%= image_path('images/icons/cards/visa.png') %>" width="30" class="img-grayscale">
                                             </li>
                                             <li>
-                                                <img src="../../assets/images/icons/cards/mastercard.png" width="30" class="img-grayscale">
+                                                <img src="<%= image_path('images/icons/cards/mastercard.png') %>" width="30" class="img-grayscale">
                                             </li>
                                             <li>
-                                                <img src="../../assets/images/icons/cards/maestro.png" width="30" class="img-grayscale">
+                                                <img src="<%= image_path('images/icons/cards/maestro.png') %>" width="30" class="img-grayscale">
                                             </li>
                                             <li>
-                                                <img src="../../assets/images/icons/cards/paypal.png" width="30" class="img-grayscale">
+                                                <img src="<%= image_path('images/icons/cards/paypal.png') %>" width="30" class="img-grayscale">
                                             </li>
                                         </ul>
                                     </div>
@@ -1221,7 +1222,7 @@
                                     <div class="card-flip" data-flip-trigger="hover">
                                         <div class="card-front">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/home-deco/img-sq-1.jpg">
+                                                    <img src="<%= image_path('images/prv/shop/home-deco/img-sq-1.jpg') %>">
                                             </div>
                                         </div>
 
@@ -1244,7 +1245,7 @@
                                     <div class="card-flip" data-flip-trigger="hover">
                                         <div class="card-front">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/home-deco/img-sq-2.jpg">
+                                                <img src="<%= image_path('images/prv/shop/home-deco/img-sq-2.jpg') %>">
                                             </div>
                                         </div>
 
@@ -1267,7 +1268,7 @@
                                     <div class="card-flip" data-flip-trigger="hover">
                                         <div class="card-front">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/home-deco/img-sq-3.jpg">
+                                                    <img src="<%= image_path('images/prv/shop/home-deco/img-sq-3.jpg') %>">
                                             </div>
                                         </div>
 
@@ -1290,7 +1291,7 @@
                                     <div class="card-flip" data-flip-trigger="hover">
                                         <div class="card-front">
                                             <div class="card-image">
-                                                <img src="../../assets/images/prv/shop/home-deco/img-sq-4.jpg">
+                                                    <img src="<%= image_path('images/prv/shop/home-deco/img-sq-4.jpg') %>">
                                             </div>
                                         </div>
 
@@ -1319,7 +1320,7 @@
             <div class="row cols-xs-space cols-sm-space cols-md-space">
                 <div class="col-lg-5">
                     <div class="col">
-                        <img src="../../assets/images/logo/logo-1-c.png">
+                            <img src="<%= image_path('images/logo/logo-1-c.png') %>">
                         <span class="clearfix"></span>
                         <span class="heading heading-sm c-gray-light strong-400">One template. Infinite solutions.</span>
                         <p class="mt-3">
