@@ -20,7 +20,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # authentification
 #gem 'pundit'
 
-gem 'sqlite3'
 gem 'stripe'
 gem 'money-rails', '~>1'
 gem 'devise'
