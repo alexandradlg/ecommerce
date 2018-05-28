@@ -2758,7 +2758,7 @@ a:hover {
 }
 
 .st-profile {
-  background-image: url("../images/patterns/pattern-1.png");
+  background-image: url("../../assets/images/patterns/pattern-1.png");
   background-repeat: repeat;
   padding: 2rem;
 }
@@ -20818,7 +20818,7 @@ body {
   }
 }
 .body-bg-1 {
-  background: url("../images/patterns/pattern-1.png");
+  background: url("../../assets/images/patterns/pattern-1.png");
   background-repeat: repeat;
 }
 
