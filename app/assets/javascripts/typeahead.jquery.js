@@ -16,7 +16,7 @@
     }
 })(this, function($) {
     var _ = function() {
-        "use strict";
+        /*"use strict";*/
         return {
             isMsie: function() {
                 return /(msie|trident)/i.test(navigator.userAgent) ? navigator.userAgent.match(/(msie |rv:)(\d+(.\d+)?)/i)[2] : false;
@@ -152,7 +152,7 @@
         };
     }();
     var WWW = function() {
-        "use strict";
+        /*"use strict";*/
         var defaultClassNames = {
             wrapper: "twitter-typeahead",
             input: "tt-input",
@@ -247,7 +247,7 @@
         }
     }();
     var EventBus = function() {
-        "use strict";
+        /*"use strict";*/
         var namespace, deprecationMap;
         namespace = "typeahead:";
         deprecationMap = {
@@ -287,7 +287,7 @@
         return EventBus;
     }();
     var EventEmitter = function() {
-        "use strict";
+        /*"use strict";*/
         var splitter = /\s+/, nextTick = getNextTick();
         return {
             onSync: onSync,
@@ -377,7 +377,7 @@
         }
     }();
     var highlight = function(doc) {
-        "use strict";
+        /*"use strict";*/
         var defaults = {
             node: null,
             pattern: null,
@@ -429,7 +429,7 @@
         }
     }(window.document);
     var Input = function() {
-        "use strict";
+        /*"use strict";*/
         var specialKeyCodeMap;
         specialKeyCodeMap = {
             9: "tab",
@@ -644,7 +644,7 @@
         }
     }();
     var Dataset = function() {
-        "use strict";
+        /*"use strict";*/
         var keys, nameGenerator;
         keys = {
             val: "tt-selectable-display",
@@ -851,7 +851,7 @@
         }
     }();
     var Menu = function() {
-        "use strict";
+        /*"use strict";*/
         function Menu(o, www) {
             var that = this;
             o = o || {};
@@ -989,7 +989,7 @@
         return Menu;
     }();
     var DefaultMenu = function() {
-        "use strict";
+        /*"use strict";*/
         var s = Menu.prototype;
         function DefaultMenu() {
             Menu.apply(this, [].slice.call(arguments, 0));
@@ -1033,7 +1033,7 @@
         return DefaultMenu;
     }();
     var Typeahead = function() {
-        "use strict";
+        /*"use strict";*/
         function Typeahead(o, www) {
             var onFocused, onBlurred, onEnterKeyed, onTabKeyed, onEscKeyed, onUpKeyed, onDownKeyed, onLeftKeyed, onRightKeyed, onQueryChanged, onWhitespaceChanged;
             o = o || {};
@@ -1306,7 +1306,7 @@
         }
     }();
     (function() {
-        "use strict";
+        /*"use strict";*/
         var old, keys, methods;
         old = $.fn.typeahead;
         keys = {

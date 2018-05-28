@@ -26,7 +26,7 @@
     /**
      * Kontrol library
      */
-    "use strict";
+    /*"use strict";*/
 
     /**
      * Definition of globals and core

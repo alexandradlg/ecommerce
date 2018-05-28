@@ -10,7 +10,7 @@
 /* exported ScrollPosStyler */
 
 var ScrollPosStyler = (function(document, window) {
-  "use strict";
+  /*"use strict";*/
 
   /* ====================
    * private variables

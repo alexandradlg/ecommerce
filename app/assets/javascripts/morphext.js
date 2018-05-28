@@ -15,7 +15,7 @@
 /*eslint-disable no-underscore-dangle */
 
 (function ($) {
-    "use strict";
+    /*"use strict";*/
 
     var pluginName = "Morphext",
         defaults = {

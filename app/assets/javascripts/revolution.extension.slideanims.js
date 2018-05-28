@@ -5,7 +5,7 @@
  * @author ThemePunch
 ************************************************/
 (function($) {
-"use strict";
+/*"use strict";*/
 var _R = jQuery.fn.revolution,
 	extension = {	alias:"SlideAnimations Min JS",
 					name:"revolution.extensions.slideanims.min.js",

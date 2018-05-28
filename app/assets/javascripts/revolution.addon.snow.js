@@ -75,7 +75,7 @@ var RsSnowAddOn = function($, slider) {
 
 /* the magic */
 (function(e, s) {
-	"use strict";
+	/*"use strict";*/
 
 	function a(e) {
 		e.pause = !0, e.sc.find(".snowflakes_wrapper").remove(), e.c.removeData("snowflakes"), e = {}

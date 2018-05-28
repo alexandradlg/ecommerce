@@ -20,14 +20,14 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 (function(factory) {
-    "use strict";
+    /*"use strict";*/
     if (typeof define === "function" && define.amd) {
         define([ "jquery" ], factory);
     } else {
         factory(jQuery);
     }
 })(function($) {
-    "use strict";
+    /*"use strict";*/
     var instances = [], matchers = [], defaultOptions = {
         precision: 100,
         elapse: false,

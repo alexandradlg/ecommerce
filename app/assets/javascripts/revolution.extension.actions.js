@@ -5,7 +5,7 @@
  * @author ThemePunch
 *********************************************/
 (function($) {
-"use strict";
+/*"use strict";*/
 var _R = jQuery.fn.revolution,
 	_ISM = _R.is_mobile(),
 	extension = {	alias:"Actions Min JS",

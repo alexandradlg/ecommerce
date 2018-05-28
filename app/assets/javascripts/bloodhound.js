@@ -16,7 +16,7 @@
     }
 })(this, function($) {
     var _ = function() {
-        "use strict";
+        /*"use strict";*/
         return {
             isMsie: function() {
                 return /(msie|trident)/i.test(navigator.userAgent) ? navigator.userAgent.match(/(msie |rv:)(\d+(.\d+)?)/i)[2] : false;
@@ -153,7 +153,7 @@
     }();
     var VERSION = "0.11.1";
     var tokenizers = function() {
-        "use strict";
+        /*"use strict";*/
         return {
             nonword: nonword,
             whitespace: whitespace,
@@ -184,7 +184,7 @@
         }
     }();
     var LruCache = function() {
-        "use strict";
+        /*"use strict";*/
         function LruCache(maxSize) {
             this.maxSize = _.isNumber(maxSize) ? maxSize : 100;
             this.reset();
@@ -252,7 +252,7 @@
         return LruCache;
     }();
     var PersistentStorage = function() {
-        "use strict";
+        /*"use strict";*/
         var LOCAL_STORAGE;
         try {
             LOCAL_STORAGE = window.localStorage;
@@ -340,7 +340,7 @@
         }
     }();
     var Transport = function() {
-        "use strict";
+        /*"use strict";*/
         var pendingRequestsCount = 0, pendingRequests = {}, maxPendingRequests = 6, sharedCache = new LruCache(10);
         function Transport(o) {
             o = o || {};
@@ -413,7 +413,7 @@
         return Transport;
     }();
     var SearchIndex = window.SearchIndex = function() {
-        "use strict";
+        /*"use strict";*/
         var CHILDREN = "c", IDS = "i";
         function SearchIndex(o) {
             o = o || {};
@@ -543,7 +543,7 @@
         }
     }();
     var Prefetch = function() {
-        "use strict";
+        /*"use strict";*/
         var keys;
         keys = {
             data: "data",
@@ -609,7 +609,7 @@
         return Prefetch;
     }();
     var Remote = function() {
-        "use strict";
+        /*"use strict";*/
         function Remote(o) {
             this.url = o.url;
             this.prepare = o.prepare;
@@ -647,7 +647,7 @@
         return Remote;
     }();
     var oParser = function() {
-        "use strict";
+        /*"use strict";*/
         return function parse(o) {
             var defaults, sorter;
             defaults = {
@@ -798,7 +798,7 @@
         }
     }();
     var Bloodhound = function() {
-        "use strict";
+        /*"use strict";*/
         var old;
         old = window && window.Bloodhound;
         function Bloodhound(o) {

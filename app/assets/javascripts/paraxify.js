@@ -6,7 +6,7 @@
  MIT license
  */
 (function(document, window, index) {
-  "use strict";
+  /*"use strict";*/
   var paraxify;
   paraxify = function(el, options) {
     var Paraxify, contador, i, opt, pho, posY, screenY;
