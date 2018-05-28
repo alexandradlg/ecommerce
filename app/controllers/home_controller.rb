@@ -8,6 +8,7 @@ class HomeController < ApplicationController
   def sign_up
   end
 
+
   def undefined
   end
 
@@ -16,4 +17,5 @@ class HomeController < ApplicationController
 
   def all_products
   end
+
 end

@@ -2,9 +2,25 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
+
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+# Use sqlite3 as the database for Active Record
+
+# Use Puma as the app server
+
+# Use SCSS for stylesheets
+
+# Use Uglifier as compressor for JavaScript assets
+
+# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'mini_racer', platforms: :ruby
+
 # authentification
 #gem 'pundit'
 
+gem 'sqlite3'
 gem 'stripe'
 gem 'money-rails', '~>1'
 gem 'devise'
