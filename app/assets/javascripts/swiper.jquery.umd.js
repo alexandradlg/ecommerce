@@ -13,7 +13,7 @@
  * Released on: December 13, 2016
  */
 (function (root, factory) {
-	'use strict';
+	// 'use strict';;
 
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
@@ -28,7 +28,7 @@
 		root.Swiper = factory(root.jQuery);
 	}
 }(this, function ($) {
-	'use strict';
+	// 'use strict';;
 
     /*===========================
     Swiper

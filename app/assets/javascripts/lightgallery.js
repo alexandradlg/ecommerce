@@ -19,7 +19,7 @@
 }(this, function ($) {
 
 (function() {
-    'use strict';
+    // 'use strict';;
 
     var defaults = {
 

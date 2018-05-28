@@ -16,7 +16,7 @@
   }
 })(this, function($) {
 
-  'use strict';
+  // 'use strict';;
 
   /**
    * Name of the plugin

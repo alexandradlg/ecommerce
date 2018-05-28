@@ -23,7 +23,7 @@
  */
 
 ;(function () {
-  'use strict'
+  // 'use strict';
 
   var sr
   var _requestAnimationFrame

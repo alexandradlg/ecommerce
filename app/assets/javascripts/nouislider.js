@@ -28,7 +28,7 @@
 
 }(function( ){
 
-	'use strict';
+	// 'use strict';;
 
 
 	// Removes duplicates from an array.

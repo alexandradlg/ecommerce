@@ -9,7 +9,7 @@
 //
 // ==================================================
 ;(function (window, document, $, undefined) {
-    'use strict';
+    // 'use strict';;
 
     // If there's no jQuery, fancyBox can't work
     // =========================================
@@ -3095,7 +3095,7 @@
 // ==========================================================================
 ;(function ($) {
 
-	'use strict';
+	// 'use strict';;
 
 	// Formats matching url to final form
 
@@ -3306,7 +3306,7 @@
 //
 // ==========================================================================
 ;(function (window, document, $) {
-	'use strict';
+	// 'use strict';;
 
 	var requestAFrame = (function () {
 		return window.requestAnimationFrame ||
@@ -4229,7 +4229,7 @@
 //
 // ==========================================================================
 ;(function (document, $) {
-	'use strict';
+	// 'use strict';;
 
 	$.extend(true, $.fancybox.defaults, {
 		btnTpl : {
@@ -4412,7 +4412,7 @@
 //
 // ==========================================================================
 ;(function (document, $) {
-	'use strict';
+	// 'use strict';;
 
 	// Collection of methods supported by user browser
 	var fn = (function () {
@@ -4623,7 +4623,7 @@
 //
 // ==========================================================================
 ;(function (document, $) {
-	'use strict';
+	// 'use strict';;
 
 	// Make sure there are default values
 	$.fancybox.defaults = $.extend(true, {
@@ -4876,7 +4876,7 @@
 //
 // ==========================================================================
 ;(function (document, $) {
-	'use strict';
+	// 'use strict';;
 
 	$.extend(true, $.fancybox.defaults, {
 		btnTpl : {
@@ -4968,7 +4968,7 @@
 //
 // ==========================================================================
 ;(function (document, window, $) {
-	'use strict';
+	// 'use strict';;
 
 	// Simple $.escapeSelector polyfill (for jQuery prior v3)
 	if ( !$.escapeSelector ) {
@@ -5181,7 +5181,7 @@
 }( document, window, window.jQuery || jQuery ));
 
 ;(function (document, $) {
-	'use strict';
+	// 'use strict';;
 
 	var prevTime = new Date().getTime();
 

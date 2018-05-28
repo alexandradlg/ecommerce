@@ -16,7 +16,7 @@
 		global.autosize = mod.exports;
 	}
 })(this, function (exports, module) {
-	'use strict';
+	// 'use strict';
 
 	var map = typeof Map === "function" ? new Map() : (function () {
 		var keys = [];

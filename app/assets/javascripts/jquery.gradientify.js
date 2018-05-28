@@ -16,7 +16,7 @@
  */
 (function ($, window, document, undefined) {
 
-    'use strict';
+    // 'use strict';;
 
     // Create the defaults once
     var pluginName = 'gradientify',

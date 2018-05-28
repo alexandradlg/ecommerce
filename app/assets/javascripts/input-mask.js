@@ -35,7 +35,7 @@
 /* jshint maxcomplexity:17 */
 /* global define */
 
-'use strict';
+// 'use strict';;
 
 // UMD (Universal Module Definition) patterns for JavaScript modules that work everywhere.
 // https://github.com/umdjs/umd/blob/master/jqueryPluginCommonjs.js
