@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2018_05_28_124759) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-ActiveRecord::Schema.define(version: 2018_05_28_102557) do
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
