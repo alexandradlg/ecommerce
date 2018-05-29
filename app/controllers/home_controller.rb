@@ -7,4 +7,15 @@ class HomeController < ApplicationController
 
   def sign_up
   end
+
+
+  def undefined
+  end
+
+  def show 
+  end
+
+  def all_products
+  end
+
 end
