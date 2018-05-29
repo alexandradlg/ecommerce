@@ -21,6 +21,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #gem 'pundit'
 
 gem 'stripe'
+gem 'mailjet'
 gem 'money-rails', '~>1'
 gem 'devise'
 gem 'rails', '5.2.0'
@@ -57,6 +58,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
+  gem 'dotenv'
 end
 
 group :development do
