@@ -4,18 +4,12 @@
                                 <div class="col-12">
                                     <div class="text-center">
                                         <h3 class="heading heading-1 strong-400 text-capitalize mb-2">
-                                            <span>Accessories</span>
+                                            <span>Gallery</span>
                                         </h3>
 
                                         <ol class="breadcrumb breadcrumb--style-2 justify-content-center">
                                             <li class="breadcrumb-item">
-                                                <a href="#" class="text-normal">Home</a>
-                                            </li>
-                                            <li class="breadcrumb-item">
-                                                <a href="#" class="text-normal">Shop</a>
-                                            </li>
-                                            <li class="breadcrumb-item">
-                                                <a href="#" class="text-normal">Accessories</a>
+                                                <%= link_to  "Home", root_path, class:"text-normal" %>
                                             </li>
                                         </ol>
                                     </div>
@@ -23,11 +17,8 @@
                                     <!-- Fluid text paragraph -->
                                     <div class="fluid-paragraph text-center mt-4">
                                         <p class="">
-                                            Parturient mus aenean a suspendisse est ligula eu dui a ultricies dictumst porttitor rhoncus a vestibulum est parturient.
+                                            Toutes les plus belles photos de chats, chatons et grands félins
                                         </p>
-                                        <a href="#" class="btn btn-styled btn-base-4 mt-4" data-scroll-to="#sct_products">
-                                            Start shopping
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -42,9 +33,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-1a.png">
-                                                    </a>
+                                                     <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[0].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
@@ -80,9 +69,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-2a.png">
-                                                    </a>
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[1].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -116,9 +103,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-3a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[2].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -151,9 +136,7 @@
                                             <div class="block product no-radius">
                                                 <div class="product-image">
                                                     <div class="view view-first">
-                                                        <a href="#">
-                                                            <img src="../../assets/images/prv/shop/accessories/img-3a.png">
-                                                        </a>
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[3].id) %>
                                                     </div>
     
                                                     <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -189,9 +172,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-5a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-5a.png"), show_item_path(@items[4].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -225,9 +206,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-6a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-6a.png"), show_item_path(@items[5].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -261,9 +240,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-7a.png"), show_item_path(@items[6].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -297,9 +274,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-8a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-8a.png"), show_item_path(@items[7].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -335,9 +310,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-1a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[8].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
@@ -371,9 +344,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-2a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[9].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -407,9 +378,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-3a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[10].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -443,9 +412,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-4a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[11].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
@@ -481,9 +448,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-5a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-5a.png"), show_item_path(@items[12].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -517,9 +482,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-6a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-6a.png"), show_item_path(@items[13].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -553,9 +516,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-7a.png"), show_item_path(@items[14].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -589,9 +550,7 @@
                                         <div class="block product no-radius">
                                             <div class="product-image">
                                                 <div class="view view-first">
-                                                    <a href="#">
-                                                        <img src="../../assets/images/prv/shop/accessories/img-8a.png">
-                                                    </a>
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-8a.png"), show_item_path(@items[15].id) %>
                                                 </div>
 
                                                 <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -625,9 +584,7 @@
                                             <div class="block product no-radius">
                                                 <div class="product-image">
                                                     <div class="view view-first">
-                                                        <a href="#">
-                                                            <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                        </a>
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[16].id) %>
                                                     </div>
     
                                                     <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -661,8 +618,7 @@
                                                 <div class="product-image">
                                                     <div class="view view-first">
                                                         <a href="#">
-                                                            <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                        </a>
+                                                                <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[17].id) %>
                                                     </div>
     
                                                     <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -695,9 +651,7 @@
                                             <div class="block product no-radius">
                                                 <div class="product-image">
                                                     <div class="view view-first">
-                                                        <a href="#">
-                                                            <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                        </a>
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[18].id) %>
                                                     </div>
     
                                                     <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
@@ -730,9 +684,7 @@
                                             <div class="block product no-radius">
                                                 <div class="product-image">
                                                     <div class="view view-first">
-                                                        <a href="#">
-                                                            <img src="../../assets/images/prv/shop/accessories/img-7a.png">
-                                                        </a>
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[19].id) %>
                                                     </div>
     
                                                     <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
