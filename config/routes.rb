@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/signin', to: 'home#sign_in'
   get '/signup', to: 'home#sign_up'
   get '/items', to: 'items#index'
-  get 'items/:id', to: 'items#show'
+  get 'items/:id', to: 'items#show', as: 'show_item'
   get '/undefined', to: 'home#undefined'
   get '/show', to: 'home#show'
   get '/products', to: 'home#all_products'
