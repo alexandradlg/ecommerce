@@ -7,4 +7,10 @@ class ItemsController < ApplicationController
     	@item = Item.find(params[:id])		
 	end 
 
+	def add_to_cart
+	end
+
+	def cart
+	end
+
 end
