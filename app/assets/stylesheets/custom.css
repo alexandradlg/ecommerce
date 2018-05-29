@@ -77,3 +77,50 @@ website:    http://www.themepunch.com
 /* TABS */
 
 
+/* ALERTS */
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+    margin-top:70px;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+    margin-top:70px;
+ }
+
+ .alert-danger {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+    margin-top:70px;
+ }
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+    margin-top:70px;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+    margin-top:70px;
+ }
+
+h2:first-of-type {
+    margin-top:70px;
+ }
+
+h1:first-of-type {
+    margin-top:70px;
+}
