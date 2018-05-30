@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   devise_for :users
   root 'home#index'
   get '/signin', to: 'home#sign_in'
@@ -8,7 +7,9 @@ Rails.application.routes.draw do
   get 'items/:id', to: 'items#show', as: 'show_item'
   get '/undefined', to: 'home#undefined'
   get '/show', to: 'home#show'
-  get '/cart', to: 'items#cart'
-  get '/thankyou', to: 'items#checkout_finish'
+  resources :carts do 
+    post '/checkout', to: 'carts#payment'
+    get '/thankyou', to: 'carts#checkout_finish'
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

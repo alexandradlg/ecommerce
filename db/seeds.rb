@@ -26,3 +26,4 @@
   item_18 = Item.create(title: "Pristi", description: "Il ne mange que des croquettes", price: 15.5, image_url: "https://www.zoomalia.com/blogz/94/l_Jolie-image-de-chat-mignon-9.jpg")
   item_19 = Item.create(title: "Babibelle", description: "Il a la patte sur le coeur", price: 15.5, image_url: "https://cdnfr1.img.sputniknews.com/images/103044/17/1030441784.jpg")
   item_20 = Item.create(title: "Rebelle", description: "Tout est dit dans le nom.", price: 15.5, image_url: "http://fr.ubergizmo.com/wp-content/uploads/2015/10/nouvelle-mode-japon-sac-chat.png")
+
