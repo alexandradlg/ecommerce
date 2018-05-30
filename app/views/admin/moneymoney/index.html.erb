@@ -1,0 +1,9 @@
+<% content_for(:title, "KPI") %>
+
+<%= render layout: "layout", locals: { wrapper: true, sidebar: false, hide_breadcrumbs: false } do %>
+Volume d'affaires sur l'ensemble des commandes : <%= Order.sum(:order_total).to_i %> €</br>
+Nombre total de commandes : <%= Order.count %></br>
+Date de la dernière commande <%= Order.last.created_at %></br>
+Nombre total d'utilisateurs : <%= User.count %></br>
+Nombre total d'articles : <%= Item.count %>
+<% end %>
