@@ -83,7 +83,6 @@ website:    http://www.themepunch.com
     border-color: #eed3d7;
     color: #b94a48;
     text-align: left;
-    margin-top:70px;
  }
 
 .alert-alert {
@@ -91,7 +90,6 @@ website:    http://www.themepunch.com
     border-color: #eed3d7;
     color: #b94a48;
     text-align: left;
-    margin-top:70px;
  }
 
  .alert-danger {
@@ -99,14 +97,12 @@ website:    http://www.themepunch.com
     border-color: #eed3d7;
     color: #b94a48;
     text-align: left;
-    margin-top:70px;
  }
 .alert-success {
     background-color: #dff0d8;
     border-color: #d6e9c6;
     color: #468847;
     text-align: left;
-    margin-top:70px;
  }
 
 .alert-notice {
@@ -114,13 +110,10 @@ website:    http://www.themepunch.com
     border-color: #d6e9c6;
     color: #468847;
     text-align: left;
-    margin-top:70px;
  }
 
 h2:first-of-type {
-    margin-top:70px;
  }
 
 h1:first-of-type {
-    margin-top:70px;
 }

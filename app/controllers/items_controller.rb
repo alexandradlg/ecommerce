@@ -10,7 +10,4 @@ class ItemsController < ApplicationController
 	def add_to_cart
 	end
 
-	def cart
-	end
-
 end
