@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ECommerce</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"> 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+    <div class="container">
+      <%= render 'layouts/header_messages' %>
+    </div>
+
+    <div class="body-wrap shop-default shop-minimalist">
+      <div id="st-container" class="st-container">
+        <div class="st-pusher">
+          <div class="st-content">
+            <div class="st-content-inner">
+            
+                <!-- Header -->
+              <div class="header">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar--bold navbar--style-2 navbar-light bg-default  navbar--bb-1px">
+                  <div class="container navbar-container">
+
+                    <%= render 'layouts/header_menu' %>
+
+                    <div class=" d-none d-lg-inline-block d-xl-inline-block">
+                      <ul class="navbar-nav ml-auto" data-hover="dropdown">
+                      
+                        <%= render 'layouts/header_session' %>
+                        <%= render 'layouts/header_cart' %>
+
+                      </ul>
+                    </div>
+
+                  </div><!-- END: container -->
+                </nav><!-- END: navbar -->
+              </div><!-- END: header -->
+
+              <%= yield %>
+
+              <%= render 'layouts/footer' %>
+            </div><!-- END: st-content-inner -->
+          </div><!-- END: st-content -->
+        </div><!-- END: st-pusher -->
+      </div><!-- END: st-container -->
+    </div><!-- END: body-wrap -->
+
+  </body>
+</html>

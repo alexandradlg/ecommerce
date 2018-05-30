@@ -1,0 +1,720 @@
+                    <section class="slice-lg page-title bg-minimalist">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-center">
+                                        <h3 class="heading heading-1 strong-400 text-capitalize mb-2">
+                                            <span>Gallery</span>
+                                        </h3>
+
+                                        <ol class="breadcrumb breadcrumb--style-2 justify-content-center">
+                                            <li class="breadcrumb-item">
+                                                <%= link_to  "Home", root_path, class:"text-normal" %>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <!-- Fluid text paragraph -->
+                                    <div class="fluid-paragraph text-center mt-4">
+                                        <p class="">
+                                            Toutes les plus belles photos de chats, chatons et grands félins
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slice sct-color-1" id="sct_products">
+                        <div class="container">
+                            <div class="row-wrapper">
+                                <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                     <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[0].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0">
+                                                        <%= @items[0].title %>
+                                                </h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[0].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[1].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[1].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[1].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[2].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[2].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[2].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                            <div class="block product no-radius">
+                                                <div class="product-image">
+                                                    <div class="view view-first">
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[3].id) %>
+                                                    </div>
+    
+                                                    <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-bag"></i>
+                                                        </button>
+    
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-ios-heart-outline"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="block-body px-0">
+                                                    <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[3].title %></h3>
+                                                    <span class="star-rating star-rating-sm">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                    <div class="price-wrapper">
+                                                        <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[3].price %></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-5a.png"), show_item_path(@items[4].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[4].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[4].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-6a.png"), show_item_path(@items[5].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[5].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[5].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-7a.png"), show_item_path(@items[6].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[6].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[6].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-8a.png"), show_item_path(@items[7].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[7].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[7].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[8].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[8].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[8].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[9].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[9].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[9].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[10].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[10].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[10].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[11].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight"  data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[11].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[11].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-5a.png"), show_item_path(@items[12].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[12].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[12].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-6a.png"), show_item_path(@items[13].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[13].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[13].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-7a.png"), show_item_path(@items[14].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[14].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[14].title %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="block product no-radius">
+                                            <div class="product-image">
+                                                <div class="view view-first">
+                                                        <%=  link_to image_tag("images/prv/shop/accessories/img-8a.png"), show_item_path(@items[15].id) %>
+                                                </div>
+
+                                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-bag"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn-product-action">
+                                                        <i class="ion-ios-heart-outline"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-body px-0">
+                                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[15].title %></h3>
+                                                <span class="star-rating star-rating-sm">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </span>
+                                                <div class="price-wrapper">
+                                                    <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[15].price %></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                            <div class="block product no-radius">
+                                                <div class="product-image">
+                                                    <div class="view view-first">
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-1a.png"), show_item_path(@items[16].id) %>
+                                                    </div>
+    
+                                                    <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-bag"></i>
+                                                        </button>
+    
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-ios-heart-outline"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="block-body px-0">
+                                                    <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[16].title %></h3>
+                                                    <span class="star-rating star-rating-sm">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                    <div class="price-wrapper">
+                                                        <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[16].price %></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                            <div class="block product no-radius">
+                                                <div class="product-image">
+                                                    <div class="view view-first">
+                                                        <a href="#">
+                                                                <%=  link_to image_tag("images/prv/shop/accessories/img-2a.png"), show_item_path(@items[17].id) %>
+                                                    </div>
+    
+                                                    <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-bag"></i>
+                                                        </button>
+    
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-ios-heart-outline"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="block-body px-0">
+                                                    <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[17].title %></h3>
+                                                    <span class="star-rating star-rating-sm">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                    <div class="price-wrapper">
+                                                        <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[17].price%></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>     
+                                    <div class="col-lg-3 col-md-6">
+                                            <div class="block product no-radius">
+                                                <div class="product-image">
+                                                    <div class="view view-first">
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-3a.png"), show_item_path(@items[18].id) %>
+                                                    </div>
+    
+                                                    <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-bag"></i>
+                                                        </button>
+    
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-ios-heart-outline"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="block-body px-0">
+                                                    <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[18].title %></h3>
+                                                    <span class="star-rating star-rating-sm">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                    <div class="price-wrapper">
+                                                        <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[18].price %></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                            <div class="block product no-radius">
+                                                <div class="product-image">
+                                                    <div class="view view-first">
+                                                            <%=  link_to image_tag("images/prv/shop/accessories/img-4a.png"), show_item_path(@items[19].id) %>
+                                                    </div>
+    
+                                                    <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-bag"></i>
+                                                        </button>
+    
+                                                        <button type="button" class="btn-product-action">
+                                                            <i class="ion-ios-heart-outline"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="block-body px-0">
+                                                    <h3 class="heading heading-6 strong-500 text-capitalize mb-0"><%= @items[19].title %></h3>
+                                                    <span class="star-rating star-rating-sm">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                    <div class="price-wrapper">
+                                                        <span class="price heading-6 c-gray-light strong-400">€<span class="price-value"><%= @items[19].price %></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>                                                              
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
