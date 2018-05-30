@@ -24,7 +24,9 @@ class CartsController < ApplicationController
   	    )	
       
         @order = Order.create(user_id: @cart.user_id, order_total: @amount)
-        @order.items << @cart.items
+		@order.items << @cart.items
+		OrderMailer.with(order: @order).order_confirmation_email.deliver_now
+		OrderMailer.with(order: @order).admin_order_confirmation_email.deliver_now
   	    redirect_to cart_thankyou_path
   	    flash[:success] = "Merci pour votre achat"
     
