@@ -38,4 +38,11 @@ class CartsController < ApplicationController
 
 	def checkout_finish
 	end
+
+    def add_to_cart
+      
+       current_cart.add_item(params[:item_id])
+
+       redirect_to cart_show_path
+   end
 end

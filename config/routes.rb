@@ -11,5 +11,10 @@ Rails.application.routes.draw do
     post '/checkout', to: 'carts#payment'
     get '/thankyou', to: 'carts#checkout_finish'
   end
+  post '/add_to_cart/:id' => 'carts#add_to_cart', :as => 'add_to_cart'
+  get '/cart', to: 'carts#show', as: 'cart_show'
+
+   resources :cart_items
+   resources :items
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
