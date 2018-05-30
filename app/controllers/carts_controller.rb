@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
     def show
+    @order_items = current_order.order_items
 		@cart = Cart.find(params[:id])
 		@sum = @cart.items.sum(:price)
 		@sum_cents = (@sum * 100).to_i

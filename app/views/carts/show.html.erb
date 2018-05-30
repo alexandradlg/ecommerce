@@ -1,1 +1,22 @@
 <%= render  "carts/cart" %>
+
+<% if !@order_items.nil? && @order_items.error.any? %>
+	<ul>
+		<% @order_items.errors.full_messages.each do |thing| %>
+				<li> <%= Nous avons eu un problème %> <li>
+		<% end %>
+
+	</ul>
+
+<% end %>
+
+<% if @order_items.size>0 %>
+	<% @order_items.each do |article| %>
+	<%= article.item.title %>
+	<%= form_for(@order_item, remote: true) do |f| %>
+	<%= f.hidden_field :item_id, value: item.id %>
+		<%= item.price %>
+
+	<%= f.submit "Add to cart" %>
+
+

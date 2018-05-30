@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  resource :order_items
   root 'home#index'
   get '/signin', to: 'home#sign_in'
   get '/signup', to: 'home#sign_up'

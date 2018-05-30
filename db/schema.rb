@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_29_213507) do
+ActiveRecord::Schema.define(version: 2018_05_30_135943) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2018_05_29_213507) do
   create_table "carts_items", id: false, force: :cascade do |t|
     t.integer "cart_id", null: false
     t.integer "item_id", null: false
+    t.integer "quantity"
     t.index ["cart_id"], name: "index_carts_items_on_cart_id"
     t.index ["item_id"], name: "index_carts_items_on_item_id"
   end
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 2018_05_29_213507) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "quantity"
   end
 
   create_table "items_orders", id: false, force: :cascade do |t|
@@ -40,6 +42,16 @@ ActiveRecord::Schema.define(version: 2018_05_29_213507) do
     t.integer "item_id", null: false
     t.index ["item_id"], name: "index_items_orders_on_item_id"
     t.index ["order_id"], name: "index_items_orders_on_order_id"
+  end
+
+  create_table "order_items", force: :cascade do |t|
+    t.integer "item_id"
+    t.integer "order_id"
+    t.float "unit_price"
+    t.integer "quantity"
+    t.float "total_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
