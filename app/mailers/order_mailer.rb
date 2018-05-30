@@ -1,6 +1,6 @@
 class OrderMailer < ApplicationMailer
 
-  def order_confirmation
+  def order_confirmation_email
 
     @order = params[:order]
     @user = @order.user
@@ -11,7 +11,7 @@ class OrderMailer < ApplicationMailer
 
   end
 
-  def admin_order_confirmation
+  def admin_order_confirmation_email
 
     @order = params[:order]
 
