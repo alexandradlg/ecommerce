@@ -246,6 +246,9 @@ GEM
       kaminari (~> 1.1.0)
       railties (>= 4.2.0)
       sass-rails (>= 5.0.6)
+    trestle-auth (0.2.4)
+      bcrypt (~> 3.1.7)
+      trestle (~> 0.8)
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
@@ -302,6 +305,7 @@ DEPENDENCIES
   sqlite3
   stripe
   trestle
+  trestle-auth
   turbolinks
   tzinfo-data
   uglifier

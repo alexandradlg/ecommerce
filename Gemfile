@@ -39,6 +39,7 @@ gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'trestle'
+gem 'trestle-auth'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
