@@ -3,7 +3,8 @@
 <%= render layout: "layout", locals: { wrapper: true, sidebar: false, hide_breadcrumbs: false } do %>
 Volume d'affaires sur l'ensemble des commandes : <%= Order.sum(:order_total).to_i %> €</br>
 Nombre total de commandes : <%= Order.count %></br>
+Panier moyen : <%= (Order.sum(:order_total) / Order.count).to_i %> €</br>
 Date de la dernière commande <%= Order.last.created_at %></br>
 Nombre total d'utilisateurs : <%= User.count %></br>
-Nombre total d'articles : <%= Item.count %>
+Nombre total d'articles : <%= Item.count %></br>
 <% end %>
