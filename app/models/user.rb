@@ -5,4 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :orders
   has_one :cart
+  after_create :create_cart
+
+  def create_cart
+    @user = User.last
+    Cart.create(user_id: @user.id)
+  end
 end

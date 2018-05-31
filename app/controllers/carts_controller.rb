@@ -6,6 +6,12 @@ class CartsController < ApplicationController
 		@sum_cents = (@sum * 100).to_i
 	end
 
+	def add_to_cart
+		@cart = Cart.find(params[:cart_id])
+		@item  = Item.find(params[:item_id])
+		@cart.items << @item
+	end
+	
 	def payment
 		@cart = Cart.find(params[:cart_id])
 		@amount = @cart.items.sum(:price)

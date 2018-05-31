@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   resources :carts do 
     post '/checkout', to: 'carts#payment'
     get '/thankyou', to: 'carts#checkout_finish'
+    resources :items do 
+      post '/additem', to: 'carts#add_to_cart'
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
