@@ -88,7 +88,7 @@
                                                               <%= item.price %>€  <!-- *quantitty -->
                                                             </td>
                                                             <td class="product-remove">
-                                                                <a href="#" class="text-right pl-4">
+                                                                <a href="<%= cart_remove_item_path(@cart.id,item) %>" class="text-right pl-4">
                                                                     <i class="ion-trash-a"></i>
                                                                 </a>
                                                             </td>
@@ -136,6 +136,8 @@
                                         <i class="ion-android-arrow-back"></i>
                                         Return to shop
                                     </a>
+
+                                     <button type="submit"  class="btn btn-styled btn-base-1" style="display:none;">
                                 </div>
                             </div>
                         </div>
