@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'cart_items/create'
   devise_for :users
   root 'home#index'
   get '/signin', to: 'home#sign_in'
@@ -11,6 +10,9 @@ Rails.application.routes.draw do
   get '/show', to: 'home#show'
   get '/panier', to: 'items#cart'
   post '/items', to: 'cart_items#create', as: 'add_item'
-
+  resources :carts do 
+    post '/checkout', to: 'carts#payment'
+    get '/thankyou', to: 'carts#checkout_finish'
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

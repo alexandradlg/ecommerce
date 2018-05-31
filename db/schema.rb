@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_05_30_082750) do
 
+
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
