@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2018_05_30_133446) do
     t.datetime "updated_at", null: false
   end
 
-
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -47,7 +46,7 @@ ActiveRecord::Schema.define(version: 2018_05_30_133446) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "online", default: true
-
+    t.integer "quantity"
   end
 
   create_table "items_orders", id: false, force: :cascade do |t|
