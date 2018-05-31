@@ -68,8 +68,6 @@ ActiveRecord::Schema.define(version: 2018_05_30_133446) do
     t.datetime "updated_at", null: false
     t.integer "quantity"
     t.boolean "online", default: true
-    t.integer "quantity"
-
   end
 
   create_table "items_orders", id: false, force: :cascade do |t|

@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
  
     get '/delete_item(/:item_id)', to: 'carts#remove_item', as: 'remove_item'
-    get '/delete_item(/:item_id)', to: 'carts#remove_cart', as: 'remove_cart'
+    delete '/delete_item(/:item_id)', to: 'carts#remove_cart', as: 'remove_cart'
 
     resources :items do 
       post '/additem', to: 'carts#add_to_cart'
