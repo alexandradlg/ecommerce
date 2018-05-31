@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root 'home#index'
   get '/signin', to: 'home#sign_in'

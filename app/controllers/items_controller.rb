@@ -1,8 +1,11 @@
 class ItemsController < ApplicationController
+
+
 	def index 
 		@items = Item.all
 	end
 	def show 
+
 		@item = Item.find(params[:id])
 		if user_signed_in?
 		@current_user = current_user
@@ -11,7 +14,6 @@ class ItemsController < ApplicationController
 		end
 
 	end
-	def add_to_cart
-	end
+
 
 end
