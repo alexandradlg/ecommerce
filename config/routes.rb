@@ -12,8 +12,14 @@ Rails.application.routes.draw do
     post '/checkout', to: 'carts#payment'
     get '/thankyou', to: 'carts#checkout_finish'
     get '/checkout', to: 'carts#payment'
+
+ 
+    get '/delete_item(/:item_id)', to: 'carts#remove_item', as: 'remove_item'
+    get '/delete_item(/:item_id)', to: 'carts#remove_cart', as: 'remove_cart'
+
     resources :items do 
       post '/additem', to: 'carts#add_to_cart'
+
     end
   end
   # post '/add_to_cart/:id' => 'carts#add_to_cart', :as => 'add_to_cart'

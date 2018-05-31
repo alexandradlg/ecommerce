@@ -27,12 +27,21 @@ class CartsController < ApplicationController
 		@order.items << @cart.items
 		OrderMailer.with(order: @order).order_confirmation_email.deliver_now
 		OrderMailer.with(order: @order).admin_order_confirmation_email.deliver_now
-  	    redirect_to cart_thankyou_path
+
+            @cart = Cart.find(params[:cart_id])
+    @item = @cart.items.find(params[:item_id])
+    @cart_item = CartsItem.find(params[:item_id])
+    @cart_item.destroy
+    
+    redirect_to cart_path(@cart)
+    
   	    flash[:success] = "Merci pour votre achat"
     
         rescue Stripe::CardError => e
         flash[:error] = e.message
+
         redirect_to cart_path(@cart)
+        
 
 	end
 
@@ -44,6 +53,20 @@ class CartsController < ApplicationController
 		@item  = Item.find(params[:item_id])
 		@cart.items << @item
     #    current_cart.add_item(params[:item_id])
-       redirect_to cart_checkout_path
+       redirect_to cart_path(@cart)
    end
+
+   def remove_item
+    @cart = Cart.find(params[:cart_id])
+    @item = @cart.items.find(params[:item_id])
+    @cart_item = CartsItem.find(params[:item_id])
+    @cart_item.destroy
+    
+    redirect_to cart_path(@cart)
+  end
+
+
+
+private 
+
 end
