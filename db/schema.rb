@@ -33,6 +33,18 @@ ActiveRecord::Schema.define(version: 2018_05_30_123206) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "administrators", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "remember_token"
+    t.datetime "remember_token_expires_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -43,6 +55,7 @@ ActiveRecord::Schema.define(version: 2018_05_30_123206) do
   create_table "carts_items", id: false, force: :cascade do |t|
     t.integer "cart_id", null: false
     t.integer "item_id", null: false
+    t.integer "quantity"
     t.index ["cart_id"], name: "index_carts_items_on_cart_id"
     t.index ["item_id"], name: "index_carts_items_on_item_id"
   end
@@ -54,6 +67,8 @@ ActiveRecord::Schema.define(version: 2018_05_30_123206) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "online", default: true
+
   end
 
   create_table "items_orders", id: false, force: :cascade do |t|
