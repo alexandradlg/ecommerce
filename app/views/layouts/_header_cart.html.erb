@@ -18,16 +18,66 @@
         <div class="d-flex align-items-center">
             <div class="dc-image">
                 <a href="#">
-                    <img src="../../assets/images/prv/shop/accessories/img-1a.png" class="img-fluid" alt="">
+                    <%= image_tag(item.image) %>
                 </a>
             </div>
             <div class="dc-content">
                 <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
                     <p></p>
                 </span>
+                <span class="dc-quantity">x2</span>
+                <span class="dc-price">$50.00</span>
+            </div>
+            <div class="dc-actions">
+                <button>
+                    <i class="ion-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
-                <span class="dc-quantity"></span>
-                <span class="dc-price"><%= item.price %></span>
+    <div class="dc-item">
+        <div class="d-flex align-items-center">
+            <div class="dc-image">
+                <a href="#">
+                    <%= image_tag(item.image) %>
+                </a>
+            </div>
+            <div class="dc-content">
+                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
+                    <a href="#">
+                        Leather bag
+                    </a>
+                </span>
+
+                <span class="dc-quantity">x1</span>
+                <span class="dc-price">$250.00</span>
+            </div>
+            <div class="dc-actions">
+                <button>
+                    <i class="ion-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dc-item">
+        <div class="d-flex align-items-center">
+            <div class="dc-image">
+                <a href="#">
+                    <%= image_tag(item.image) %>
+                </a>
+            </div>
+            <div class="dc-content">
+                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
+                    <a href="#">
+                        Brown leather wallet
+                    </a>
+                </span>
+
+                <span class="dc-quantity">x1</span>
+                <span class="dc-price">$99.00</span>
+
             </div>
             <div class="dc-actions">
                 <button>
