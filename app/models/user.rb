@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_one :cart
   after_create :create_cart
 
+
   def create_cart
     @user = User.last
     Cart.create(user_id: @user.id)
