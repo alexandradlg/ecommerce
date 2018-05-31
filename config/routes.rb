@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  get 'users/order_details'
-=======
-
->>>>>>> 74ca3a3559268f809f26dfa7f808f2fedd53ea29
   devise_for :users
   root 'home#index'
   get '/signin', to: 'home#sign_in'
