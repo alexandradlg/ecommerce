@@ -12,7 +12,6 @@ class ItemsController < ApplicationController
 		@cart = Cart.find(@current_user.cart.id)
 		@cart_id = @cart.id
 		end
-
 	end
 
 
