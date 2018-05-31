@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
+	before_action :authenticate_user!
 
-    def show
+	def show
 		@cart = Cart.find(params[:id])
 		@sum = @cart.items.sum(:price)
 		@sum_cents = (@sum * 100).to_i
@@ -37,5 +38,14 @@ class CartsController < ApplicationController
 	end
 
 	def checkout_finish
+		@cart = Cart.find(params[:cart_id])
 	end
+
+    def add_to_cart
+		@cart = Cart.find(params[:cart_id])
+		@item  = Item.find(params[:item_id])
+		@cart.items << @item
+    #    current_cart.add_item(params[:item_id])
+       redirect_to cart_checkout_path
+   end
 end
