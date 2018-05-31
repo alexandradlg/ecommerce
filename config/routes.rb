@@ -14,8 +14,7 @@ Rails.application.routes.draw do
     get '/thankyou', to: 'carts#checkout_finish'
     get '/checkout', to: 'carts#payment'
 
- 
-    get '/delete_item(/:item_id)', to: 'carts#remove_item', as: 'remove_item'
+    post '/delete_item(/:item_id)', to: 'carts#remove_item', as: 'rmv_item'
     delete '/delete_item(/:item_id)', to: 'carts#remove_cart', as: 'remove_cart'
 
     resources :items do 
