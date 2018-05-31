@@ -38,8 +38,12 @@ gem 'frontend-generators'
 gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
+gem "google-cloud-storage"
+gem "aws-sdk-s3", require: false
+
 gem 'trestle'
 gem 'trestle-auth'
+gem 'dotenv'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -58,7 +62,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
-  gem 'dotenv'
+
 end
 
 group :development do

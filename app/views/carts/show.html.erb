@@ -1,1 +1,33 @@
-<%= render  "carts/cart" %>
+<% if current_user.id == @cart.user_id %>
+    <%= render  "carts/cart" %>
+<% else %>
+<!-- MAIN WRAPPER -->
+<div class="body-wrap">
+        <section class="background-image-holder" data-holder-type="fullscreen" data-holder-offset="">
+            <span class="mask mask-gradient-1--style-1"></span>
+            <div class="slice holder-item holder-item-light">
+                <div class="container container-sm d-flex align-items-center">
+                    <div class="col">
+                        <div class="row py-3 text-center justify-content-center">
+                            <div class="col-12 col-md-10">
+                                <div class="text-cover-wrapper">
+                                    <h3 class="text-cover-title c-white">404</h3>
+                                    <h4 class="text-cover-subtitle c-white strong-400 mt-4">Page not found</h4>
+                                    <div class="clearfix"></div>
+                                    <p class="text-lg line0height-1_8 c-white mt-5">
+                                        Ce n'est pas votre panier<br />
+                                        vous n'avez pas accès au panier des autres utilisateurs!
+                                    </p>
+                                    <div class="text-center mt-5">
+                                        <%= link_to  "Back to Home", root_path, class:"btn btn-styled btn-white btn-outline btn-circle" %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- END: body-wrap -->
+    
+<% end %>
