@@ -40,7 +40,8 @@
                                                     <div class="row mt-2">
                                                         <div class="col-12">
                                                             <!-- Add to cart button -->
-                                                            <button type="button" class="btn btn-lg btn-block btn-gray-dark btn-icon-left">
+                                                            <%= button_to 'Press me', add_item_path, method: :post, class:'btn btn-lg btn-block btn-gray-dark btn-icon-left'  %>
+                                                          
                                                                 <i class="icon ion-bag"></i> Add to cart
                                                             </button>
                                                         </div>
