@@ -1,7 +1,7 @@
 <!-- Login -->
   <li class="nav-item nav-item-icon">
-    <a href="#" class="nav-link hidden-md-down" data-toggle="dropdown">
-        <i class="fa fa-user"></i>
+      <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i>
     </a>
 
     <ul class="dropdown-menu dropdown-menu--right dropdown-form">
@@ -11,6 +11,13 @@
           <li class="text-center py-3 b-xs-top">
             <%= link_to('Logout', destroy_user_session_path) %> 
           </li>
+          <li class="text-center py-3 b-xs-top">
+              <%= link_to('Mes commandes', orders_path) %> 
+          </li>
+          <li class="text-center py-3 b-xs-top">
+              <%= link_to('Editer mon profil', edit_user_registration_path) %> 
+          </li>
+
 
         <% else %>
         
