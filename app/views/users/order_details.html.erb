@@ -1,0 +1,112 @@
+<!-- MAIN WRAPPER -->
+<div class="body-wrap" data-template-mode="cards">
+        <div id="st-container" class="st-container">
+    
+    
+    
+            <div class="st-pusher">
+                <div class="st-content">
+                    <div class="st-content-inner">
+                        <section class="slice-sm sct-color-1">
+                            <div class="profile">
+                                <div class="container">
+                                    <div class="row cols-xs-space cols-sm-space cols-md-space">
+                                        <div class="col-lg-4">
+                                            <div class="sidebar sidebar--style-2 no-border stickyfill">
+                                                    <div class="widget">
+            <!-- Profile details -->
+            <div class="profile-details">
+                <h2 class="heading heading-4 strong-500 profile-name"><%= @user.email %></h2>
+            </div>
+    
+            <!-- Profile connect -->
+            <div class="profile-connect mt-4">
+                <%= link_to  "Editer mon profil", edit_user_registration_path, class:"btn btn-styled btn-block btn-rounded btn-base-1" %>
+            </div>
+    
+            <!-- Profile stats -->
+            <div class="profile-stats clearfix">
+                <div class="stats-entry">
+                    <span class="stats-count"><%= @user.orders.count %></span>
+                    <span class="stats-label text-uppercase">commandes</span>
+                </div>
+                <div class="stats-entry">
+                    <span class="stats-count"><%= @user.cart.items.count %></span>
+                    <span class="stats-label text-uppercase"><%="Article".pluralize(2)%> dans le panier</span>
+                </div>
+            </div>
+    
+            <!-- Profile connected accounts -->
+            <div class="profile-useful-links clearfix">
+                <div class="useful-links">
+                    <%= link_to  "Voir mon panier", cart_path(@user.cart.id) %>
+                </div>
+            </div>
+        </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-8">
+                                            <div class="main-content">
+                                                <!-- Page title -->
+                                                <div class="page-title">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6 col-12">
+                                                            <h2 class="heading heading-5 text-capitalize strong-500 mb-0">
+                                                                    <i class="ion-ios-arrow-back"></i> 
+                                                                    <%= link_to  "Shop", items_path, class:"link text-underline--none" %>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="link-menu link-menu--style-3 py-4">
+                                                    <p>Liste des commandes passées</p>
+                                                </div>
+    
+                                                <!-- Order history table -->
+                                                <div class="card no-border">
+                                                    <div>
+                                                        <table class="table table-sm table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Order</th>
+                                                                    <th>Date</th>
+                                                                    <th>Amount</th>
+                                                                </tr>
+                                                            </thead>
+    
+                                                            <tbody>
+                                                            <% @user.orders.each do |order| %>
+                                                                <tr>
+                                                                    <td>
+                                                                        <%=order.id%>
+                                                                    </td>
+                                                                    <td><%=order.created_at.strftime("%F") %></td>
+                                                                    <td>
+                                                                        <%=order.order_total.to_i%> €
+                                                                    </td>
+                                                                    <td>
+                                                                </tr>
+                                                            <% end %>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> 
+                    </div>
+                </div>
+            </div><!-- END: st-pusher -->
+        </div><!-- END: st-container -->
+    </div><!-- END: body-wrap -->
+    

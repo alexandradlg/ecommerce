@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/order_details'
   devise_for :users
   root 'home#index'
   get '/signin', to: 'home#sign_in'
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'items/:id', to: 'items#show', as: 'show_item'
   get '/undefined', to: 'home#undefined'
   get '/show', to: 'home#show'
+  get '/orders', to: 'users#order_details'
 
   resources :carts do 
     post '/checkout', to: 'carts#payment'
