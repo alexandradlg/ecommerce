@@ -10,20 +10,20 @@
                                 <div class="col-md-6">
                                     <div class="">
                                         <h3 class="heading heading-1 strong-600 text-capitalize mb-1">
-                                            <span>Cart</span>
+                                            <span>Panier</span>
                                         </h3>
 
                                         <ol class="breadcrumb breadcrumb--style-2">
-                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                            <li class="breadcrumb-item"<a href="#">Shop</a></li>
-                                            <li class="breadcrumb-item"><a href="#">Checkout</a></li>
+                                            <li class="breadcrumb-item"><a href="<%= root_path %>">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="<%= items_path %>">Shop</a></li>
+                                            <li class="breadcrumb-item"><a href="">Paiement</a></li>
                                         </ol>
                                     </div>
 
                                     <!-- Fluid text paragraph -->
                                     <div class="pb-4 mt-4">
                                         <p class="lead">
-                                            Parturient mus aenean a suspendisse est ligula eu dui a ultricies dictumst porttitor rhoncus a vestibulum.
+                                            Votre panier 
                                         </p>
                                     </div>
                                 </div>
@@ -33,6 +33,7 @@
 
                     <section class="slice sct-color-1">
                         <div class="container">
+
                             <div class="row justify-content-center">
                                 <div class="col-lg-12 mt--150">
                                     <form class="form-default" data-toggle="validator" role="form">
@@ -42,32 +43,30 @@
                                                     <thead>
                                                         <tr>
                                                             <th class="product-image"></th>
-                                                            <th class="product-name">Product</th>
-                                                            <th class="product-size d-none d-lg-table-cell">Size</th>
-                                                            <th class="product-price d-none d-lg-table-cell">Price</th>
-                                                            <th class="product-quanity d-none d-md-table-cell">Quantity</th>
+                                                            <th class="product-name">Produit</th>
+                                                            <th class="product-price d-none d-lg-table-cell">Prix</th>
+                                                            <th class="product-quanity d-none d-md-table-cell">Quantité</th>
                                                             <th class="product-total">Total</th>
                                                             <th class="product-remove"></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+                                                         <% @cart.items.each do |item| %>
                                                         <tr class="cart-item">
                                                             <td class="product-image">
                                                                 <a href="#">
-                                                                    <img src="../../assets/images/prv/shop/sportswear/img-1a.png">
+                                                                    <img src="<%= item.image_url %>">
                                                                 </a>
                                                             </td>
 
                                                             <td class="product-name">
-                                                                
+                                                              <%= item.title %>  
                                                             </td>
 
-                                                            <td class="product-size product-size d-none d-lg-table-cell">
-                                                                <span class="strong-600">39</span>
-                                                            </td>
+                                                           
 
                                                             <td class="product-price d-none d-lg-table-cell">
-                                                                $120 USD
+                                                              <%= item.price %>€
                                                             </td>
 
                                                             <td class="product-quantity d-none d-md-table-cell">
@@ -86,7 +85,7 @@
                                                                 </div>
                                                             </td>
                                                             <td class="product-total">
-                                                                <span>$120.00 USD</span>
+                                                              <%= item.price %>€  <!-- *quantitty -->
                                                             </td>
                                                             <td class="product-remove">
                                                                 <a href="#" class="text-right pl-4">
@@ -95,140 +94,7 @@
                                                             </td>
                                                         </tr>
 
-                                                        <!-- Cart item -->
-                                                        <tr class="cart-item">
-                                                            <td class="product-image">
-                                                                <a href="#">
-                                                                    <img src="../../assets/images/prv/shop/sportswear/img-2a.png">
-                                                                </a>
-                                                            </td>
-
-                                                            <td class="product-name">
-                                                                Man short sleeve shirt - Pink
-                                                            </td>
-
-                                                            <td class="product-size product-size d-none d-lg-table-cell">
-                                                                <span class="strong-600">M</span>
-                                                            </td>
-
-                                                            <td class="product-price d-none d-lg-table-cell">
-                                                                $45 USD
-                                                            </td>
-
-                                                            <td class="product-quantity d-none d-md-table-cell">
-                                                                <div class="input-group input-group--style-2 pr-4" style="width: 130px;">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[2]">
-                                                                            <i class="ion-minus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                    <input type="text" name="quantity[2]" class="form-control input-number" placeholder="3" value="2" min="1" max="10">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[2]">
-                                                                             <i class="ion-plus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td class="product-total">
-                                                                <span>$90.00 USD</span>
-                                                            </td>
-                                                            <td class="product-remove">
-                                                                <a href="#" class="text-right pl-4">
-                                                                    <i class="ion-trash-a"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-
-                                                        <!-- Cart item -->
-                                                        <tr class="cart-item">
-                                                            <td class="product-image">
-                                                                <a href="#">
-                                                                    <img src="../../assets/images/prv/shop/sportswear/img-3a.png">
-                                                                </a>
-                                                            </td>
-
-                                                            <td class="product-name">
-                                                                Man running shoes- Black
-                                                            </td>
-
-                                                            <td class="product-size product-size d-none d-lg-table-cell">
-                                                                <span class="strong-600">42</span>
-                                                            </td>
-
-                                                            <td class="product-price d-none d-lg-table-cell">
-                                                                $160 USD
-                                                            </td>
-
-                                                            <td class="product-quantity d-none d-md-table-cell">
-                                                                <div class="input-group input-group--style-2 pr-4" style="width: 130px;">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[3]" disabled="disabled">
-                                                                            <i class="ion-minus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                    <input type="text" name="quantity[3]" class="form-control input-number" placeholder="3" value="1" min="1" max="10">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[3]">
-                                                                             <i class="ion-plus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td class="product-total">
-                                                                <span>$160.00 USD</span>
-                                                            </td>
-                                                            <td class="product-remove">
-                                                                <a href="#" class="text-right pl-4">
-                                                                    <i class="ion-trash-a"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-
-                                                        <!-- Cart item -->
-                                                        <tr class="cart-item">
-                                                            <td class="product-image">
-                                                                <a href="#">
-                                                                    <img src="../../assets/images/prv/shop/sportswear/img-4a.png">
-                                                                </a>
-                                                            </td>
-
-                                                            <td class="product-name">
-                                                                Ocean blue fitness shirt
-                                                            </td>
-
-                                                            <td class="product-size product-size d-none d-lg-table-cell">
-                                                                <span class="strong-600">XL</span>
-                                                            </td>
-
-                                                            <td class="product-price d-none d-lg-table-cell">
-                                                                $30 USD
-                                                            </td>
-
-                                                            <td class="product-quantity d-none d-md-table-cell">
-                                                                <div class="input-group input-group--style-2 pr-4" style="width: 130px;">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[4]">
-                                                                            <i class="ion-minus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                    <input type="text" name="quantity[4]" class="form-control input-number" placeholder="3" value="4" min="1" max="10">
-                                                                    <span class="input-group-btn">
-                                                                        <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[4]">
-                                                                             <i class="ion-plus"></i>
-                                                                        </button>
-                                                                    </span>
-                                                                </div>
-                                                            </td>
-                                                            <td class="product-total">
-                                                                <span>$120.00 USD</span>
-                                                            </td>
-                                                            <td class="product-remove">
-                                                                <a href="#" class="text-right pl-4">
-                                                                    <i class="ion-trash-a"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
+                                                <%end %>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -251,12 +117,12 @@
                                             </div>
                                           <% end %>
                                           <label class="amount">
-                                            <span>Amount: €<%=@sum%></span>
+                                            <span>A payer <%=@sum%> €</span>
                                           </label>
                                         </article> 
-                                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button", style= "display:none;" 
                                             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                                            data-description="Montant total : <%=@sum%>"
+                                            data-description="Montant total : <%=@sum.to_i%>"
                                             data-amount="<%@sum_cents%>"
                                             data-locale="auto">
                                             data-label="Confirmer votre commande"
@@ -266,7 +132,7 @@
                                         </script>
                                         <%= button_tag 'Confirmer votre commande', class:"btn btn-styled btn-base-1"%>
                                     <% end %></br>
-                                    <a href="#" class="link link--style-3">
+                                    <a href="<%= items_path %>" class="link link--style-3">
                                         <i class="ion-android-arrow-back"></i>
                                         Return to shop
                                     </a>
