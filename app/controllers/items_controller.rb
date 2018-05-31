@@ -5,9 +5,11 @@ class ItemsController < ApplicationController
 	def show 
 		@item = Item.find(params[:id])
 		if user_signed_in?
-			@cart = current_user.cart
-			@cart_id = @cart.id
+		@current_user = current_user
+		@cart = Cart.find(current_user.id)
+		@cart_id = @cart.id
 		end
+
 	end
 	def add_to_cart
 	end

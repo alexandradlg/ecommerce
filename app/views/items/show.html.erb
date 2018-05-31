@@ -42,6 +42,8 @@
                                                             <!-- Add to cart button -->
                                                             <% if user_signed_in? %>
                                                                 <%= button_to "Ajouter au panier", cart_item_additem_path(@cart_id, @item.id), class:"btn btn-lg btn-block btn-gray-dark btn-icon-left" %>
+                                                            <% else %>
+                                                            <%= button_to "Sign up", new_user_registration_path, method: :get, class:"btn btn-lg btn-block btn-gray-dark btn-icon-left" %>
                                                             <% end %>
                                                         </div>
                                                     </div>

@@ -6,12 +6,6 @@ class CartsController < ApplicationController
 		@sum_cents = (@sum * 100).to_i
 	end
 
-	def add_to_cart
-		@cart = Cart.find(params[:cart_id])
-		@item  = Item.find(params[:item_id])
-		@cart.items << @item
-	end
-	
 	def payment
 		@cart = Cart.find(params[:cart_id])
 		@amount = @cart.items.sum(:price)
@@ -30,7 +24,9 @@ class CartsController < ApplicationController
   	    )	
       
         @order = Order.create(user_id: @cart.user_id, order_total: @amount)
-        @order.items << @cart.items
+		@order.items << @cart.items
+		OrderMailer.with(order: @order).order_confirmation_email.deliver_now
+		OrderMailer.with(order: @order).admin_order_confirmation_email.deliver_now
   	    redirect_to cart_thankyou_path
   	    flash[:success] = "Merci pour votre achat"
     
@@ -42,4 +38,12 @@ class CartsController < ApplicationController
 
 	def checkout_finish
 	end
+
+    def add_to_cart
+		@cart = Cart.find(params[:cart_id])
+		@item  = Item.find(params[:item_id])
+		@cart.items << @item
+    #    current_cart.add_item(params[:item_id])
+       redirect_to cart_checkout_path
+   end
 end

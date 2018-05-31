@@ -7,12 +7,19 @@ Rails.application.routes.draw do
   get 'items/:id', to: 'items#show', as: 'show_item'
   get '/undefined', to: 'home#undefined'
   get '/show', to: 'home#show'
+
   resources :carts do 
     post '/checkout', to: 'carts#payment'
     get '/thankyou', to: 'carts#checkout_finish'
+    get '/checkout', to: 'carts#payment'
     resources :items do 
       post '/additem', to: 'carts#add_to_cart'
     end
   end
+  # post '/add_to_cart/:id' => 'carts#add_to_cart', :as => 'add_to_cart'
+  # get '/cart', to: 'carts#show', as: 'cart_show'
+
+   resources :cart_items
+   resources :items
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
